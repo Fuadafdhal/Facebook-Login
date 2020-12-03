@@ -83,7 +83,7 @@ class MainActivity : AppCompatActivity() {
                     // Sign in success, update UI with the signed-in user's information
                     Log.d(TAG, "signInWithCredential:success")
                     val user = auth.currentUser
-
+                    Log.d(TAG,"name : ${user?.displayName} and profileURl : ${user?.photoUrl} and Email : ${user?.email}")
                     updateUI(user)
                 } else {
                     // If sign in fails, display a message to the user.
